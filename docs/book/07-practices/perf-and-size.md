@@ -1,10 +1,10 @@
----
+id: practices-perf-and-size
+title: 启动、性能与体积
+sidebar_label: 性能与体积
 sidebar_position: 1
 ---
 
-# 启动、性能与体积
-
-# 性能与体积
+## 性能与体积
 
 本页汇总如何量化体积与启动性能，并给出可复现脚本。
 

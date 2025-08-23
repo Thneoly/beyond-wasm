@@ -1,4 +1,6 @@
----
+id: wasi-capabilities
+title: 能力模型与权限授予
+sidebar_label: 能力与权限
 sidebar_position: 1
 ---
 

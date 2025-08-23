@@ -4,8 +4,8 @@
   "position": 6,
   "link": {
     "type": "generated-index",
+    "slug": "/book/scenarios",
     "title": "第 6 章 应用场景与模式",
-    "description": "浏览器与 Node、HTTP 与组件、服务端与插件式扩展",
-    "slug": "/book/06-scenarios"
+    "description": "浏览器与 Node、HTTP 与组件、服务端与插件式扩展"
   }
 }

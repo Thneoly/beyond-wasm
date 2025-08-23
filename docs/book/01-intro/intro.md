@@ -1,6 +1,8 @@
 ---
+id: intro-overview
 title: 第 1 章 引言
-slug: /book/01-intro/overview
+sidebar_label: 为什么要学习 WASM
+sidebar_position: 1
 ---
 
 本章目标：回答「为什么要学习 WASM」，给出清晰的背景、能力边界与应用全景。

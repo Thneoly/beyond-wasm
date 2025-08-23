@@ -1,5 +1,8 @@
 ---
-sidebar_position: 1
+id: intro-history
+title: 历史与演进
+sidebar_label: 历史与演进
+sidebar_position: 2
 ---
 
 # 历史与演进

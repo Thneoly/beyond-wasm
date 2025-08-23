@@ -1,6 +1,8 @@
 ---
+id: scenarios-overview
 title: 第 6 章 应用场景与模式
-slug: /book/06-scenarios/overview
+sidebar_label: 本章导读
+sidebar_position: 1
 ---
 
 目标：了解 WASM 在真实系统中的用法与优势。

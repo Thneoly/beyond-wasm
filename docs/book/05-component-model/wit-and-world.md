@@ -1,4 +1,6 @@
----
+id: component-wit-and-world
+title: WIT 与 World
+sidebar_label: WIT 与 World
 sidebar_position: 1
 ---
 

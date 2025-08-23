@@ -4,8 +4,8 @@
   "position": 3,
   "link": {
     "type": "generated-index",
+    "slug": "/book/runtimes-toolchain",
     "title": "第 3 章 运行时与工具链",
-    "description": "运行时对比、工具链与调试、Rust→WASM→Wasmtime",
-    "slug": "/book/03-runtimes"
+    "description": "运行时对比、工具链与调试、Rust→WASM→Wasmtime"
   }
 }

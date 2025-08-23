@@ -4,8 +4,8 @@
   "position": 7,
   "link": {
     "type": "generated-index",
+    "slug": "/book/practices",
     "title": "第 7 章 实践与示例",
-    "description": "体积与性能、预编译与分发、工具链技巧",
-    "slug": "/book/07-practices"
+    "description": "体积与性能、预编译与分发、工具链技巧"
   }
 }

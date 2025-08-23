@@ -1,4 +1,6 @@
----
+id: scenarios-http-and-components
+title: HTTP 与组件化服务
+sidebar_label: HTTP 与组件化
 sidebar_position: 2
 ---
 

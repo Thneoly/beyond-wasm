@@ -1,5 +1,8 @@
 ---
-sidebar_position: 3
+id: intro-quickstart
+title: 快速上手
+sidebar_label: 快速上手
+sidebar_position: 4
 ---
 
 # 快速上手

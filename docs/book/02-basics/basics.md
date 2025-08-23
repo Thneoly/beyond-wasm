@@ -1,6 +1,8 @@
 ---
+id: basics-overview
 title: 第 2 章 基础篇：WASM 核心概念
-slug: /book/02-basics/overview
+sidebar_label: 本章导读
+sidebar_position: 1
 ---
 
 本章目标：理解 WASM 是什么样的字节码与执行模型，掌握基本类型、线性内存、导入/导出与安全沙箱。
