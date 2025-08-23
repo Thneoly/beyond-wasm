@@ -14,7 +14,7 @@ sidebar_position: 1
 flowchart LR
 	Start([运行时选择]) --> A[组件模型支持]
 	A --> B[WASI 能力]
-	B --> C[启动/内存开销]
+	B --> C["启动/内存开销"]
 	C --> D[嵌入 API 友好度]
 	D --> E[生态与工具]
 ```

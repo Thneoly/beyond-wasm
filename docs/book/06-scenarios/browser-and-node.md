@@ -30,6 +30,6 @@ flowchart LR
 		HTML --> WASM[.wasm]
 	end
 	subgraph Node
-		HostJS[host.js] --> Plugins[plugins/*.wasm]
+		HostJS[host.js] --> Plugins["plugins/*.wasm"]
 	end
 ```

@@ -16,9 +16,9 @@ WIT（WebAssembly Interface Types）用于描述跨语言/组件的接口契约�
 
 ```mermaid
 flowchart TB
-	Pkg[package: demo] --> IF1[interface: math]
-	Pkg --> IF2[interface: strings]
-	Pkg --> World[world: app]
+	Pkg["package: demo"] --> IF1["interface: math"]
+	Pkg --> IF2["interface: strings"]
+	Pkg --> World["world: app"]
 	World --> IF1
 	World --> IF2
 	style World fill:#efe,stroke:#8a8

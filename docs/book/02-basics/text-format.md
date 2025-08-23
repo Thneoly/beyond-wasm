@@ -14,7 +14,7 @@ sidebar_position: 1
 flowchart LR
 	WAT[.wat] -->|parse| WASM[.wasm]
 	WASM -->|print| WAT
-	WASM -->|strip| WASM_stripped[.wasm (stripped)]
+	WASM -->|strip| WASM_stripped[".wasm (stripped)"]
 ```
 
 示例命令：

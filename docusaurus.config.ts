@@ -35,6 +35,12 @@ const config: Config = {
     locales: ['zh-Hans'],
   },
 
+  // Enable Mermaid support for Markdown/MDX
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',

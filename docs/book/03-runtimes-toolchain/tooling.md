@@ -13,9 +13,9 @@ sidebar_position: 2
 ```mermaid
 flowchart LR
 	Source[源代码] --> Build[编译为 .wasm]
-	Build --> Component[组件化 (component new)]
-	Component --> Compose[组合 (component compose)]
-	Compose --> Host[宿主运行 (Wasmtime/Node/Spin)]
+	Build --> Component["组件化 (component new)"]
+	Component --> Compose["组合 (component compose)"]
+	Compose --> Host["宿主运行 (Wasmtime/Node/Spin)"]
 ```
 
 常用命令片段：

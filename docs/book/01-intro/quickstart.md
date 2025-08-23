@@ -12,12 +12,12 @@ sidebar_position: 3
 
 ```mermaid
 flowchart LR
-	Docs[文档站] --> Examples[examples/]
+	Docs["文档站"] --> Examples["examples/"]
 	Examples --> ch06[ch06 场景演示]
 	Examples --> ch07[ch07 实践报告]
-	ch06 --> NodeHTTP[Node HTTP]
-	ch07 --> SizeOpt[体积优化]
-	ch07 --> Precompile[预编译对比]
+	ch06 --> NodeHTTP["Node HTTP"]
+	ch07 --> SizeOpt["体积优化"]
+	ch07 --> Precompile["预编译对比"]
 ```
 
 ## 最小命令清单

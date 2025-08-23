@@ -59,8 +59,8 @@ wasmtime run --mapdir /sandbox=. app.wasm
 
 ```mermaid
 flowchart LR
-	Host[宿主 (Wasmtime/Spin/Node 等)] -->|授予: dir/env/clock| Caps[能力集合]
-	Caps -->|受限调用| Guest[WASM 模块/组件]
+	Host["宿主 (Wasmtime/Spin/Node 等)"] -->|授予: dir/env/clock| Caps["能力集合"]
+	Caps -->|受限调用| Guest["WASM 模块/组件"]
 	style Caps fill:#eef,stroke:#88a
 	style Guest fill:#efe,stroke:#8a8
 ```
