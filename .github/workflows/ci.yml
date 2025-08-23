@@ -11,7 +11,7 @@ on:
       - "docusaurus.config.ts"
       - "sidebars.ts"
       - "package.json"
-  - "yarn.lock"
+      - "yarn.lock"
       - "scripts/**"
       - ".github/workflows/ci.yml"
 
@@ -39,6 +39,12 @@ jobs:
 
       - name: Typecheck
         run: yarn --silent typecheck || true
+
+      - name: Check mermaid labels
+        run: yarn --silent check:mermaid
+
+      - name: Check brace-grouped paths
+        run: yarn --silent check:braces
 
       - name: Check links
         run: STRICT_LINKS=0 yarn --silent check:links || true

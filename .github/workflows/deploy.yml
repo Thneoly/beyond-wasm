@@ -9,8 +9,8 @@ on:
       - "docusaurus.config.ts"
       - "sidebars.ts"
       - "package.json"
-  - "yarn.lock"
-  - ".github/workflows/deploy.yml"
+      - "yarn.lock"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
