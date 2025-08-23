@@ -1,0 +1,29 @@
+# Node / Docusaurus
+node_modules/
+build/
+.docusaurus/
+.cache/
+dist/
+.turbo/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env
+.env*
+
+# Rust/Cargo targets in examples
+examples/**/target/
+
+# Example outputs/reports
+examples/**/out/
+
+# Spin build outputs
+examples/**/wasi_http_spin/target/

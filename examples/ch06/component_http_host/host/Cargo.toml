@@ -1,0 +1,9 @@
+[package]
+name = "component_http_host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+tiny_http = "0.12"
+wasmtime = { version = "18", features = ["component-model"] }

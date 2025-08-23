@@ -1,0 +1,11 @@
+[package]
+name = "wasi_fs_time"
+version = "0.1.0"
+authors = ["Beyond WASM Authors"]
+edition = "2021"
+
+[[bin]]
+name = "wasi_fs_time"
+path = "src/main.rs"
+
+[dependencies]

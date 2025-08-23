@@ -1,0 +1,9 @@
+package demo:add
+
+interface math {
+  add: func(a: s32, b: s32) -> s32
+}
+
+world add-world {
+  export math
+}

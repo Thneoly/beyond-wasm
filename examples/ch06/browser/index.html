@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WASM in Browser</title>
+  </head>
+  <body>
+    <h1>WASM in Browser (add)</h1>
+    <script type="module">
+      async function main() {
+        const resp = await fetch('./add.wasm');
+        const { instance } = await WebAssembly.instantiateStreaming(resp, {});
+        const { add } = instance.exports;
+        console.log('add(2,3)=', add(2,3));
+        document.body.insertAdjacentHTML('beforeend', `<p>add(2,3) = ${add(2,3)}</p>`);
+      }
+      main();
+    </script>
+  </body>
+</html>

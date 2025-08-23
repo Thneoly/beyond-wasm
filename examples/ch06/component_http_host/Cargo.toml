@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "host",
+  # business_component 使用 cargo-component 构建，非常规 cargo 包成员也可通过独立命令构建
+]

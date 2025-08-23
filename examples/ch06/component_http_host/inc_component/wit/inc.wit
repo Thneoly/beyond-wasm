@@ -1,0 +1,9 @@
+package demo:inc
+
+interface math2 {
+  inc: func(x: s32) -> s32
+}
+
+world inc-world {
+  export math2
+}

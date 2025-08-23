@@ -1,0 +1,14 @@
+package demo:glue
+
+use demo:add/math
+use demo:inc/math2
+
+interface api {
+  add-then-inc: func(a: s32, b: s32) -> s32
+}
+
+world glue-world {
+  import math
+  import math2
+  export api
+}

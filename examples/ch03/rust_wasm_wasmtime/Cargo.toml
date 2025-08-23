@@ -1,0 +1,11 @@
+[package]
+name = "rust_wasm_wasmtime"
+version = "0.1.0"
+authors = ["Beyond WASM Authors"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# no_std not required; keep std for simplicity

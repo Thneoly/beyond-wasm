@@ -1,0 +1,32 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: Install deps
+        run: npm ci
+      - name: Check mermaid labels
+        run: npm run -s check:mermaid
+      - name: Check brace-grouped paths
+        run: npm run -s check:braces
+      - name: Check links (non-blocking)
+        run: STRICT_LINKS=0 npm run -s check:links || true
+      - name: Build site (don't fail on broken links)
+        run: STRICT_LINKS=0 npm run -s build
