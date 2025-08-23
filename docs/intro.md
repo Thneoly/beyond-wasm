@@ -2,52 +2,42 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 项目简介与快速开始
 
 > 立即开始阅读《Beyond the Browser: WebAssembly 全景解析》：
 >
-> - 书籍入口：在侧边栏找到 “📘 书籍：Beyond the Browser”，或访问稳定路径 `/docs/book`
-> - 每章配套可运行示例在 `examples/` 目录
-> - 快速跳转：完整运行指南与依赖矩阵见 `examples/README.md`（总览导航 + 工具链准备 + FAQ）
+> - 书籍入口：侧边栏 “Docs” → “Book”，或访问稳定路径 `/docs/book`
+> - 每章配套可运行示例位于 `examples/` 目录
+> - 运行指南与依赖矩阵：见 `examples/README.md`
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## 使用 Yarn（统一）
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+本仓库采用 Yarn。请使用 Node.js 18 或更高版本。
 
 ```bash
-npm init docusaurus@latest my-website classic
+# 安装依赖
+yarn
+
+# 本地开发（http://localhost:3000）
+yarn start
+
+# 构建静态站点（产物在 build/）
+yarn build
+
+# 本地预览已构建站点
+yarn serve
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## 环境依赖（示例相关）
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- wasm-tools（.wat↔.wasm、strip/component 等）
+- Wasmtime（运行核心 WASM/WASI/组件）
+- Rust toolchain + wasm32-wasi（构建 Rust 示例/组件）
+- Binaryen（可选，`wasm-opt -Oz` 体积优化）
 
-## Start your site
+详细准备、常见问题与一键脚本见 `examples/README.md`。
 
-Run the development server:
+## 推荐路径
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- 先阅读 `/docs/book` 的“基础 → 运行时/工具链 → WASI → 组件模型”。
+- 先跑 `examples/ch06`（浏览器/Node/插件式宿主）与 `examples/ch07`（体积优化与预编译对比）建立直观感受。
