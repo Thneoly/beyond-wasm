@@ -46,3 +46,9 @@ wasmtime target/wasm32-wasi/release/rust_wasm_wasmtime.wasm --invoke add 1 2
 ---
 
 小结：选择运行时与工具链时，需结合部署环境与能力需求。下一章进入 WASI。
+
+---
+
+更多内容：
+- 运行时全览 → ./03-runtimes-toolchain/runtimes
+- 工具链与开发流程 → ./03-runtimes-toolchain/tooling

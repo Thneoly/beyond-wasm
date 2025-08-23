@@ -58,3 +58,9 @@ WASM 使用一段“线性内存”（按页增长，1 页 = 64KiB）。主机�
 ---
 
 小结：你已掌握 WASM 的基本构件。下一章将比较主流运行时与工具链，并通过 Rust 生成 WASM 后在 Wasmtime 中运行。
+
+---
+
+更多内容：
+- 文本与二进制细节 → ./02-basics/text-format
+- 入口/导入导出与内存/表 → ./02-basics/linking-memory-table
