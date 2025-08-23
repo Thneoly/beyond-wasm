@@ -9,8 +9,8 @@ on:
       - "docusaurus.config.ts"
       - "sidebars.ts"
       - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/deploy.yml"
+  - "yarn.lock"
+  - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
@@ -35,16 +35,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "${{ matrix.node }}"
-          cache: "npm"
+          cache: "yarn"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (Yarn)
+        run: yarn install --frozen-lockfile
 
       - name: Typecheck
-        run: npm run typecheck --silent || true
+        run: yarn --silent typecheck || true
 
       - name: Build website
-        run: bash -lc 'STRICT_LINKS=0 npm run build'
+        run: bash -lc 'STRICT_LINKS=0 yarn build'
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

@@ -11,7 +11,7 @@ on:
       - "docusaurus.config.ts"
       - "sidebars.ts"
       - "package.json"
-      - "package-lock.json"
+  - "yarn.lock"
       - "scripts/**"
       - ".github/workflows/ci.yml"
 
@@ -32,19 +32,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
+          cache: "yarn"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (Yarn)
+        run: yarn install --frozen-lockfile
 
       - name: Typecheck
-        run: npm run typecheck --silent || true
+        run: yarn --silent typecheck || true
 
       - name: Check links
-        run: STRICT_LINKS=0 npm run -s check:links || true
+        run: STRICT_LINKS=0 yarn --silent check:links || true
 
       - name: Build website (don't fail on link breaks in CI)
-        run: STRICT_LINKS=0 npm run build
+        run: STRICT_LINKS=0 yarn build
 
       - name: (Optional) Smoke test curl example
         if: ${{ github.event_name == 'push' }}

@@ -19,14 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-      - name: Install deps
-        run: npm ci
+          cache: "yarn"
+      - name: Install deps (Yarn)
+        run: yarn install --frozen-lockfile
       - name: Check mermaid labels
-        run: npm run -s check:mermaid
+        run: yarn --silent check:mermaid
       - name: Check brace-grouped paths
-        run: npm run -s check:braces
+        run: yarn --silent check:braces
       - name: Check links (non-blocking)
-        run: STRICT_LINKS=0 npm run -s check:links || true
+        run: STRICT_LINKS=0 yarn --silent check:links || true
       - name: Build site (don't fail on broken links)
-        run: STRICT_LINKS=0 npm run -s build
+        run: STRICT_LINKS=0 yarn build
