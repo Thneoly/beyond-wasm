@@ -1,7 +1,8 @@
+---
 id: basics-linking-memory-table
 title: 入口、导入导出与内存/表
 sidebar_label: 导入/导出与内存/表
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 入口、导入导出与内存/表

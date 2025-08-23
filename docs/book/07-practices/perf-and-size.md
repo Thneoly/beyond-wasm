@@ -1,7 +1,8 @@
+---
 id: practices-perf-and-size
 title: 启动、性能与体积
 sidebar_label: 性能与体积
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## 性能与体积

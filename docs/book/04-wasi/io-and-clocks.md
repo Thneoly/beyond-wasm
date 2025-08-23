@@ -1,3 +1,4 @@
+---
 id: wasi-io-and-clocks
 title: I/O 与时钟
 sidebar_label: I/O 与时钟

@@ -1,7 +1,8 @@
+---
 id: component-wit-and-world
 title: WIT 与 World
 sidebar_label: WIT 与 World
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # WIT 与 World

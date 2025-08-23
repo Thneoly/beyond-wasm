@@ -1,7 +1,8 @@
+---
 id: basics-text-binary
 title: 文本格式与二进制
 sidebar_label: 文本与二进制
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 文本格式与二进制

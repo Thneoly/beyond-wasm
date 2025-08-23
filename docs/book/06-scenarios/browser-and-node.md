@@ -1,7 +1,8 @@
+---
 id: scenarios-browser-and-node
 title: 浏览器与 Node 宿主
 sidebar_label: 浏览器与 Node
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 浏览器与 Node 宿主

@@ -1,3 +1,4 @@
+---
 id: component-composition
 title: 组合与宿主
 sidebar_label: 组合与宿主
