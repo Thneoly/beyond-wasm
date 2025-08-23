@@ -12,7 +12,7 @@ sidebar_position: 1
 
 ## 使用 Yarn（统一）
 
-本仓库采用 Yarn。请使用 Node.js 18 或更高版本。
+本仓库采用 Yarn。请使用 Node.js 20 或更高版本。
 
 ```bash
 # 安装依赖
