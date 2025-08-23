@@ -1,6 +1,6 @@
 ---
 title: 第 5 章 组件模型与未来标准
-slug: /book/05-component-model
+slug: /book/05-component-model/overview
 ---
 
 目标：理解组件模型的动机、接口类型与绑定，并演示模块组合为组件。
@@ -58,12 +58,10 @@ bash build-components.sh
 bash run-glue.sh 2 3
 ```
 
-下一步将提供 WIT 与 `component compose` 的完整示例。
-
 提示：示例目录包含说明与 WIT 草案，见：
 - `examples/ch05/components_composition/NOTES.md`
- - `examples/ch05/components_composition/wit/`
- - `examples/ch05/components_composition/{add_component,inc_component,glue_component}/`
+- `examples/ch05/components_composition/wit/`
+- `examples/ch05/components_composition/{add_component,inc_component,glue_component}/`
 
 ## 5.4 wasi:io, wasi:crypto, wasi:nn 使用场景
 
@@ -80,5 +78,5 @@ I/O 抽象、密码学原语、神经网络推理等标准化接口。
 ---
 
 更多内容：
-- WIT 与 World → ./05-component-model/wit-and-world
-- 组合与宿主 → ./05-component-model/composition
+- WIT 与 World → ./wit-and-world
+- 组合与宿主 → ./composition

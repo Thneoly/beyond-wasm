@@ -1,4 +1,11 @@
 {
-  "label": "深入阅读：第04章",
-  "collapsed": true
+  "label": "WASI · 子章节",
+  "collapsed": true,
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "第 4 章 WASI",
+    "description": "preview1→preview2、能力模型与示例：文件与时间",
+    "slug": "/book/04-wasi"
+  }
 }

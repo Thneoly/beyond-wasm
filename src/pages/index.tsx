@@ -14,14 +14,14 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Beyond the Browser
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">WebAssembly 全景解析：基础、WASI、组件模型与实践</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/book">
-            进入《Beyond the Browser》📖
+            阅读《Beyond the Browser》📖
           </Link>
         </div>
       </div>
@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="WebAssembly 全景解析：基础、运行时/WASI、组件模型与实践案例">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

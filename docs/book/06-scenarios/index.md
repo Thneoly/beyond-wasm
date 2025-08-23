@@ -1,6 +1,6 @@
 ---
 title: 第 6 章 应用场景与模式
-slug: /book/06-scenarios
+slug: /book/06-scenarios/overview
 ---
 
 目标：了解 WASM 在真实系统中的用法与优势。
@@ -44,5 +44,5 @@ WasmEdge 等运行时中的推理示例（后续补充 demo）。
 ---
 
 更多内容：
-- 浏览器与 Node 宿主 → ./06-scenarios/browser-and-node
-- HTTP 与组件化服务 → ./06-scenarios/http-and-components
+- 浏览器与 Node 宿主 → ./browser-and-node
+- HTTP 与组件化服务 → ./http-and-components

@@ -1,4 +1,11 @@
 {
-  "label": "深入阅读：第02章",
-  "collapsed": true
+  "label": "基础 · 子章节",
+  "collapsed": true,
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "第 2 章 基础",
+    "description": "字节码、执行模型、内存与导入导出",
+    "slug": "/book/02-basics"
+  }
 }

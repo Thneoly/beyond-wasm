@@ -18,7 +18,6 @@ const sidebars: SidebarsConfig = {
 
   // But you can create a sidebar manually
   /*
-  /*
   bookSidebar: [
     'intro',
     'hello',
@@ -28,7 +27,7 @@ const sidebars: SidebarsConfig = {
       items: ['tutorial-basics/create-a-document'],
     },
   ],
-   */
+  */
 };
 
 export default sidebars;

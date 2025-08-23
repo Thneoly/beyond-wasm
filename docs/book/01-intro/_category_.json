@@ -1,4 +1,11 @@
 {
-  "label": "深入阅读：第01章",
-  "collapsed": true
+  "label": "引言 · 子章节",
+  "collapsed": true,
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "第 1 章 引言",
+    "description": "为什么是 WebAssembly、背景脉络与全景导读",
+    "slug": "/book/01-intro"
+  }
 }

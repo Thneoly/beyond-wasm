@@ -1,7 +1,6 @@
 ---
-title: 第 3 章 运行时与工具链（legacy）
-slug: /_legacy/book/03-runtimes
-draft: true
+title: 第 3 章 运行时与工具链
+slug: /book/03-runtimes/overview
 ---
 
 目标：了解主流运行时差异、常用编译工具链与调试工具；完成“Rust 生成 WASM + Wasmtime 执行”。
@@ -10,8 +9,8 @@ draft: true
 
 ## 模块导览（本章深入）
 
-- 运行时全览 → ./03-runtimes-toolchain/runtimes
-- 工具链与开发流程 → ./03-runtimes-toolchain/tooling
+- 运行时全览 → ./runtimes
+- 工具链与开发流程 → ./tooling
 
 ## 3.1 运行时对比
 
@@ -51,10 +50,10 @@ wasmtime target/wasm32-wasi/release/rust_wasm_wasmtime.wasm --invoke add 1 2
 
 ---
 
-小结：选择运行时与工具链时，需结合部署环境与能力需求。下一章进入 WASI。
+小结：选择运行时与工具链时，需要结合部署环境与能力需求。下一章进入 WASI。
 
 ---
 
 更多内容：
-- 运行时全览 → ./03-runtimes-toolchain/runtimes
-- 工具链与开发流程 → ./03-runtimes-toolchain/tooling
+- 运行时全览 → ./runtimes
+- 工具链与开发流程 → ./tooling

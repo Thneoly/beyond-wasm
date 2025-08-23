@@ -1,7 +1,6 @@
 ---
-title: 第 4 章 WASI（System Interface）（legacy）
-slug: /_legacy/book/04-wasi
-draft: true
+title: 第 4 章 WASI（System Interface）
+slug: /book/04-wasi/overview
 ---
 
 目标：理解 WASI 的目标、preview1 局限与 preview2 的能力模型，并通过示例访问文件与时间。
@@ -43,5 +42,5 @@ wasmtime --dir=. target/wasm32-wasi/release/wasi_fs_time.wasm sample.txt
 ---
 
 更多内容：
-- 能力模型与权限授予 → ./04-wasi/capability-model
-- I/O 与时钟 → ./04-wasi/io-and-clocks
+- 能力模型与权限授予 → ./capability-model
+- I/O 与时钟 → ./io-and-clocks

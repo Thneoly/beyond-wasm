@@ -1,7 +1,6 @@
 ---
-title: 第 2 章 基础：字节码与执行模型（legacy）
-slug: /_legacy/book/02-basics
-draft: true
+title: 第 2 章 基础：字节码与执行模型
+slug: /book/02-basics/overview
 ---
 
 本章目标：理解 WASM 是什么样的字节码与执行模型，掌握基本类型、线性内存、导入/导出与安全沙箱。
@@ -10,8 +9,8 @@ draft: true
 
 ## 模块导览（本章深入）
 
-- 文本与二进制：.wat ↔ .wasm 转换与 strip → ./02-basics/text-format
-- 入口/导入导出与内存/表：ABI 与数据交换 → ./02-basics/linking-memory-table
+- 文本与二进制：.wat ↔ .wasm 转换与 strip → ./text-format
+- 入口/导入导出与内存/表：ABI 与数据交换 → ./linking-memory-table
 
 ## 2.1 Text 与 Binary：.wat 与 .wasm
 
@@ -36,7 +35,7 @@ wasm-tools print examples/ch02/min.wasm | head -n 50
 
 ## 2.3 线性内存模型
 
-WASM 使用一段“线性内存”（按页增长，1 页 = 64KiB）。主机负责将其与宿主地址空间隔离。
+WASM 使用一段“线性内存”（按页增长，1 页 = 64KiB）。宿主负责将其与宿主地址空间隔离。
 
 - 读写通过 `i32.load`, `i32.store` 等指令完成。
 - 越界会触发陷阱（trap），确保内存安全。
@@ -76,7 +75,7 @@ flowchart LR
 	WASM -->|strip| WASM_stripped[".wasm (stripped)"]
 ```
 
-详见：./02-basics/text-format
+详见：./text-format
 
 ## 导入/导出与内存/表（摘录）
 
@@ -90,4 +89,4 @@ flowchart LR
 	style Table fill:#eef,stroke:#88a
 ```
 
-详见：./02-basics/linking-memory-table
+详见：./linking-memory-table

@@ -1,6 +1,6 @@
 ---
 title: 第 8 章 展望与生态
-slug: /book/08-outlook
+slug: /book/08-outlook/overview
 ---
 
 目标：理解未来标准化路线与产业趋势，并给出可落地的“下一步行动”。
@@ -37,7 +37,7 @@ slug: /book/08-outlook
 - 供应链与签名：SBOM、签名校验（Sigstore 等），提升可验证性
 
 建议：
-- 默认关闭一切非必需能力；对输入做严格校验与限制
+- 默认关闭一切非必须能力；对输入做严格校验与限制
 - 组件签名与来源证明；在 CI/部署阶段进行策略检查
 
 ## 8.4 标准化进程与时间线
@@ -57,7 +57,6 @@ slug: /book/08-outlook
 工程考量：
 - 性能：体积、启动、内存占用的综合平衡
 - 运维：灰度、调试工具、观测（Tracing/Metrics/Logs）
-
 
 ## 8.6 路线图与“下一步行动”
 30 天：
@@ -86,4 +85,4 @@ slug: /book/08-outlook
 ---
 
 更多内容：
-- 趋势与路线图 → ./08-outlook/trends-and-roadmap
+- 趋势与路线图 → ./trends-and-roadmap

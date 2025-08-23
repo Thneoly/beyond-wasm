@@ -1,6 +1,6 @@
 ---
 title: 第 7 章 实践与示例
-slug: /book/07-practices
+slug: /book/07-practices/overview
 ---
 
 目标：通过一组递进式示例完成从入门到实战。
@@ -64,4 +64,4 @@ slug: /book/07-practices
 ---
 
 更多内容：
-- 性能与体积 → ./07-practices/perf-and-size
+- 性能与体积 → ./perf-and-size

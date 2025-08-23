@@ -1,4 +1,11 @@
 {
-  "label": "深入阅读：第07章",
-  "collapsed": true
+  "label": "实践 · 子章节",
+  "collapsed": true,
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "第 7 章 实践",
+    "description": "体积与性能、预编译与分发、工具链技巧",
+    "slug": "/book/07-practices"
+  }
 }

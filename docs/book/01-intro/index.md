@@ -1,7 +1,6 @@
 ---
-title: 第 1 章 引言：为什么是 WebAssembly（legacy）
-slug: /_legacy/book/01-intro
-draft: true
+title: 第 1 章 引言：为什么是 WebAssembly
+slug: /book/01-intro/overview
 ---
 
 本章目标：回答「为什么要学习 WASM」，给出清晰的背景、能力边界与应用全景。
@@ -10,9 +9,9 @@ draft: true
 
 ## 模块导览（本章深入）
 
-- 历史与演进：里程碑时间线与关键拐点 → ./01-intro/history
-- 生态与版图：运行时/工具链/标准三视图 → ./01-intro/landscape
-- 快速上手：从文档站与示例开始的最短路径 → ./01-intro/quickstart
+- 历史与演进：里程碑时间线与关键拐点 → ./history
+- 生态与版图：运行时/工具链/标准三视图 → ./landscape
+- 快速上手：从文档站与示例开始的最短路径 → ./quickstart
 
 ## 1.1 什么是 WebAssembly（WASM）
 
@@ -79,8 +78,6 @@ timeline
 	2024-2025 : preview2 落地与生态采纳
 ```
 
-
-
 ## 生态与版图（摘录）
 
 ```mermaid
@@ -106,8 +103,6 @@ flowchart LR
 	Spec --> Runtime
 	Spec --> Tooling
 ```
-
-
 
 ## 快速上手（摘录）
 

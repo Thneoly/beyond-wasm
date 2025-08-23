@@ -39,8 +39,11 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
+
+  // Include Mermaid theme
   themes: ['@docusaurus/theme-mermaid'],
 
+  // Docusaurus presets
   presets: [
     [
       'classic',
@@ -49,8 +52,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Thneoly/beyond-wasm/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -60,8 +62,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Thneoly/beyond-wasm/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -85,10 +86,9 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'bookSidebar',
+          to: '/docs/book',
+          label: 'Book',
           position: 'left',
-          label: 'Docs',
         },
         {
           href: 'https://github.com/Thneoly/beyond-wasm',
@@ -101,7 +101,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Book',
           items: [
             {
               label: 'Book',
