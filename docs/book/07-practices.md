@@ -60,3 +60,8 @@ slug: /book/07-practices
 	- 进入 `examples/ch07/size-opt`，执行 `bash run.sh`，查看 `out/report.md`
 - 预编译对比报告
 	- 进入 `examples/ch07/precompile-wasmtime`，执行 `bash run.sh`，查看 `out/report.md`
+
+---
+
+更多内容：
+- 性能与体积 → ./07-practices/perf-and-size

@@ -40,3 +40,9 @@ WasmEdge 等运行时中的推理示例（后续补充 demo）。
 ---
 
 小结：场景选择决定运行时与接口选择。
+
+---
+
+更多内容：
+- 浏览器与 Node 宿主 → ./06-scenarios/browser-and-node
+- HTTP 与组件化服务 → ./06-scenarios/http-and-components

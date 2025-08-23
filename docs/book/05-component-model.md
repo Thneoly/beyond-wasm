@@ -76,3 +76,9 @@ I/O 抽象、密码学原语、神经网络推理等标准化接口。
 ---
 
 小结：组件模型将成为多语言与多模块协作的关键基座。
+
+---
+
+更多内容：
+- WIT 与 World → ./05-component-model/wit-and-world
+- 组合与宿主 → ./05-component-model/composition

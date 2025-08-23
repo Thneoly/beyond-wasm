@@ -38,3 +38,9 @@ wasmtime --dir=. target/wasm32-wasi/release/wasi_fs_time.wasm sample.txt
 ---
 
 小结：WASI 为 WASM 赋予受控 I/O 能力，是浏览器外运行的关键基础。
+
+---
+
+更多内容：
+- 能力模型与权限授予 → ./04-wasi/capability-model
+- I/O 与时钟 → ./04-wasi/io-and-clocks
