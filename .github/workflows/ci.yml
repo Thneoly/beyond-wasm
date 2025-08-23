@@ -41,7 +41,7 @@ jobs:
         run: npm run typecheck --silent || true
 
       - name: Check links
-  run: STRICT_LINKS=0 npm run -s check:links || true
+        run: STRICT_LINKS=0 npm run -s check:links || true
 
       - name: Build website (don't fail on link breaks in CI)
         run: STRICT_LINKS=0 npm run build
