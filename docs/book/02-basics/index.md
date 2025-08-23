@@ -1,5 +1,5 @@
 ---
-title: 第 2 章 基础：字节码与执行模型
+title: 第 2 章 基础篇：WASM 核心概念
 slug: /book/02-basics/overview
 ---
 

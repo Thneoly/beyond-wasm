@@ -1,10 +1,10 @@
 {
-  "label": "WASI · 子章节",
+  "label": "第 4 章 WASI（System Interface）",
   "collapsed": true,
   "position": 4,
   "link": {
     "type": "generated-index",
-    "title": "第 4 章 WASI",
+    "title": "第 4 章 WASI（System Interface）",
     "description": "preview1→preview2、能力模型与示例：文件与时间",
     "slug": "/book/04-wasi"
   }

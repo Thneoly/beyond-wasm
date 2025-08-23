@@ -1,10 +1,10 @@
 {
-  "label": "组件模型 · 子章节",
+  "label": "第 5 章 组件模型与未来标准",
   "collapsed": true,
   "position": 5,
   "link": {
     "type": "generated-index",
-    "title": "第 5 章 组件模型",
+    "title": "第 5 章 组件模型与未来标准",
     "description": "组件、WIT 与 world、组合与复用、跨语言边界",
     "slug": "/book/05-component-model"
   }

@@ -1,5 +1,5 @@
 ---
-title: 第 1 章 引言：为什么是 WebAssembly
+title: 第 1 章 引言
 slug: /book/01-intro/overview
 ---
 
