@@ -64,3 +64,9 @@ wasi:io, wasi:crypto, wasi:nn 等能力接口的使用与场景。
 更多内容：
 - WIT 与 World → ./wit-and-world
 - 组合与宿主 → ./composition
+- 类型与语法速览 → ./types-and-syntax
+ - 绑定与工具链 → ./bindings-and-tools
+ - 组件化工作流 → ./workflow
+ - 版本与兼容 → ./versioning-and-compat
+ - 分发与签名 → ./distribution-and-signing
+ - 宿主与运行时 → ./host-and-runtime

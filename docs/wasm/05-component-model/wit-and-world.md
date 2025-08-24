@@ -9,6 +9,8 @@ sidebar_position: 3
 
 WIT（WebAssembly Interface Types）用于描述跨语言/组件的接口契约。
 
+> 先读：如需快速回顾 WIT 的“类型与语法”，请参考“类型与语法速览” → ./types-and-syntax
+
 ## 核心概念
 
 - package：接口包的逻辑命名空间，包含多个接口/世界。
@@ -54,3 +56,5 @@ wasm-tools component wit target/wasm32-wasi/release/my-demo.component.wasm
 	- 新增字段尽量设为可选（Optional），避免破坏性变更；
 	- 更名或弃用通过新接口保留旧接口一段时间；
 	- 以 world 维度进行“能力分组”，控制依赖面。
+
+> 更多：详见“类型与语法速览” → ./types-and-syntax
