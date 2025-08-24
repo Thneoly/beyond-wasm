@@ -8,7 +8,7 @@ sidebar_position: 4
 # 快速上手
 
 - 安装 Node >= 18，`yarn start` 打开文档站
-- 安装 wasm-tools 与 Wasmtime，运行 `examples/` 下示例
+- 安装 wasm-tools 与 Wasmtime，运行 [examples/](https://github.com/Thneoly/beyond-wasm/tree/main/examples) 下示例
 - 先跑 ch06 的 Node HTTP 与 ch07 的两个脚本，快速建立直观感受
 
 ## 路径图（示意）

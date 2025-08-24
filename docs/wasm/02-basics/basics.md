@@ -7,7 +7,7 @@ sidebar_position: 1
 
 本章目标：理解 WASM 是什么样的字节码与执行模型，掌握基本类型、线性内存、导入/导出与安全沙箱。
 
-> 快速跳转：完整的运行指南与依赖矩阵见 `examples/README.md`（总览导航 + 工具链准备 + FAQ）。
+> 快速跳转：完整的运行指南与依赖矩阵见 [examples/README.md](https://github.com/Thneoly/beyond-wasm/blob/main/examples/README.md)（总览导航 + 工具链准备 + FAQ）。
 
 ## 模块导览（本章深入）
 
@@ -19,7 +19,7 @@ sidebar_position: 1
 - .wat：可读的文本格式（s-expression）。
 - .wasm：紧凑的二进制格式，供运行时加载。
 
-最小示例位于 `examples/ch02/min.wat`，可用 `wasm-tools` 转换与验证：
+最小示例位于 [examples/ch02/min.wat](https://github.com/Thneoly/beyond-wasm/blob/main/examples/ch02/min.wat)，可用 `wasm-tools` 转换与验证：
 
 ```bash
 # 将文本格式转为二进制
@@ -31,16 +31,33 @@ wasm-tools print examples/ch02/min.wasm | head -n 50
 
 ## 2.2 类型系统与函数签名
 
-- 数值类型：i32, i64, f32, f64
+- 数值类型：i32, i64, f32, f64；参考类型/GC 为提案阶段，组件模型提供更高层数据编解码能力。
 - 函数类型：参数与返回值列表，例如 `(func (param i32 i32) (result i32))`
-- 指令栈：操作数通过栈传递，类型在验证阶段静态检查。
+- 指令栈：操作数通过栈传递，类型在验证阶段静态检查（宿主与 Wasm 的 ABI 需事先约定）。
+
+边界与注意：
+- 没有内建字符串/结构体：需在内存中通过编码（UTF-8、length+offset）约定传递。
+- 浮点与确定性：不同平台的浮点行为一致性由规范约束，但仍需谨慎对比差异。
 
 ## 2.3 线性内存模型
 
 WASM 使用一段“线性内存”（按页增长，1 页 = 64KiB）。宿主负责将其与宿主地址空间隔离。
 
-- 读写通过 `i32.load`, `i32.store` 等指令完成。
-- 越界会触发陷阱（trap），确保内存安全。
+- 读写通过 `i32.load`, `i32.store` 等指令完成；按类型与对齐访问。
+- 越界会触发陷阱（trap），确保内存安全；增长以“页”为单位（64KiB）。
+
+最小示例：
+```wat
+(module
+	(memory (export "mem") 1)
+	(func (export "write_i32") (param i32 i32)
+		local.get 0
+		local.get 1
+		i32.store)
+	(func (export "read_i32") (param i32) (result i32)
+		local.get 0
+		i32.load))
+```
 
 ## 2.4 模块、导入与导出
 
@@ -57,10 +74,17 @@ WASM 使用一段“线性内存”（按页增长，1 页 = 64KiB）。宿主�
 		i32.add))
 ```
 
+与宿主交互：宿主通过 import 提供函数/内存/表等；Wasm 模块通过 export 暴露能力。组件模型将进一步统一 ABI 与类型桥接，减少手工编码工作。
+
 ## 2.5 安全模型与确定性
 
 - 沙箱：模块默认没有 I/O 能力，必须由宿主显式赋予（见第 4 章 WASI）。
 - 确定性：指令语义稳定、平台无关，适合分布式/区块链等场景。
+- 能力最小化：仅授予必要目录/时钟/网络等能力（capability-based）。
+
+延伸阅读：
+- 组件模型与接口类型：../05-component-model/component-model
+- WASI 能力模型：../04-wasi/wasi
 
 ---
 

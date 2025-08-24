@@ -44,7 +44,7 @@ cargo build -Zunstable-options --target wasm32-wasi --release
 wasm-tools component wit target/wasm32-wasi/release/my-demo.component.wasm
 ```
 
-更多可见 `examples/ch05/components_composition`。
+更多可见 [examples/ch05/components_composition](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch05/components_composition)。
 
 ## 类型与版本化建议
 

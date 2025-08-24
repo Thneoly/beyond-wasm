@@ -9,7 +9,7 @@ sidebar_position: 3
 
 - rustup 目标、cargo-component、wasm-tools、wit-bindgen
 - 典型流程：源码 → wasm → 组件化 → 组合/运行
-- 示例：见 `examples/ch03` 与 `examples/ch05`
+- 示例：见 [examples/ch03](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch03) 与 [examples/ch05](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch05)
 
 ## 开发流水线（示意）
 

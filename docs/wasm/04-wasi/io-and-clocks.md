@@ -40,7 +40,7 @@ sequenceDiagram
 
 ## 运行示例
 
-参考 `examples/ch04/wasi_fs_time`：
+参考 [examples/ch04/wasi_fs_time](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch04/wasi_fs_time)：
 
 ```bash
 rustup target add wasm32-wasi

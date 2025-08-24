@@ -7,7 +7,7 @@ sidebar_position: 1
 
 本章目标：回答「为什么要学习 WASM」，给出清晰的背景、能力边界与应用全景。
 
-> 快速跳转：完整的运行指南与依赖矩阵见 `examples/README.md`（总览导航 + 工具链准备 + FAQ）。
+> 快速跳转：完整的运行指南与依赖矩阵见 [examples/README.md](https://github.com/Thneoly/beyond-wasm/blob/main/examples/README.md)（总览导航 + 工具链准备 + FAQ）。
 
 ## 模块导览（本章深入）
 
@@ -59,7 +59,7 @@ WebAssembly 是一种可移植、紧凑的字节码格式和安全的执行模�
 1) 基础概念（第 2 章）  2) 运行时与工具链（第 3 章）  3) WASI（第 4 章）
 4) 组件模型（第 5 章）  5) 应用场景（第 6 章）  6) 实践示例（第 7 章）  7) 展望（第 8 章）
 
-与 examples/ 目录联动，所有示例可运行。建议从最小 .wat 示例开始：`examples/ch02/min.wat`（见第 2 章）。
+与 examples/ 目录联动，所有示例可运行。建议从最小 .wat 示例开始：[examples/ch02/min.wat](https://github.com/Thneoly/beyond-wasm/blob/main/examples/ch02/min.wat)（见第 2 章）。
 
 ---
 

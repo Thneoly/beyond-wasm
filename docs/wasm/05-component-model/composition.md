@@ -28,7 +28,7 @@ flowchart LR
 
 ## 脚本化例子
 
-参考 `examples/ch05/components_composition`：
+参考 [examples/ch05/components_composition](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch05/components_composition)：
 
 ```bash
 bash componentize-ch03.sh       # 从 ch03 核心模块生成组件
@@ -37,7 +37,7 @@ bash build-components.sh        # 快速构建三个组件并查看 WIT
 bash run-glue.sh 2 3            # 调用 glue 组件导出
 ```
 
-宿主侧更复杂的组合参考 `examples/ch06/component_http_host`（含池化与多模式）。
+宿主侧更复杂的组合参考 [examples/ch06/component_http_host](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch06/component_http_host)（含池化与多模式）。
 
 ## 组合策略权衡
 

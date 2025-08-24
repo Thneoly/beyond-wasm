@@ -7,8 +7,8 @@ sidebar_position: 1
 > 立即开始阅读《Beyond the Browser: WebAssembly 全景解析》：
 >
 > - 书籍入口：侧边栏 “Docs” → “Book”，或访问稳定路径 `/docs/book`
-> - 每章配套可运行示例位于 `examples/` 目录
-> - 运行指南与依赖矩阵：见 `examples/README.md`
+> - 每章配套可运行示例位于 [examples/](https://github.com/Thneoly/beyond-wasm/tree/main/examples) 目录
+> - 运行指南与依赖矩阵：见 [examples/README.md](https://github.com/Thneoly/beyond-wasm/blob/main/examples/README.md)
 
 ## 使用 Yarn（统一）
 
@@ -35,9 +35,9 @@ yarn serve
 - Rust toolchain + wasm32-wasi（构建 Rust 示例/组件）
 - Binaryen（可选，`wasm-opt -Oz` 体积优化）
 
-详细准备、常见问题与一键脚本见 `examples/README.md`。
+详细准备、常见问题与一键脚本见 [examples/README.md](https://github.com/Thneoly/beyond-wasm/blob/main/examples/README.md)。
 
 ## 推荐路径
 
 - 先阅读 `/docs/book` 的“基础 → 运行时/工具链 → WASI → 组件模型”。
-- 先跑 `examples/ch06`（浏览器/Node/插件式宿主）与 `examples/ch07`（体积优化与预编译对比）建立直观感受。
+- 先跑 [examples/ch06](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch06)（浏览器/Node/插件式宿主）与 [examples/ch07](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch07)（体积优化与预编译对比）建立直观感受。

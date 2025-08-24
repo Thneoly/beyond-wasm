@@ -7,7 +7,7 @@ sidebar_position: 1
 
 目标：了解主流运行时差异、常用编译工具链与调试工具；完成“Rust 生成 WASM + Wasmtime 执行”。
 
-> 快速跳转：完整的运行指南与依赖矩阵见 `examples/README.md`（总览导航 + 工具链准备 + FAQ）。
+> 快速跳转：完整的运行指南与依赖矩阵见 [examples/README.md](https://github.com/Thneoly/beyond-wasm/blob/main/examples/README.md)（总览导航 + 工具链准备 + FAQ）。
 
 ## 模块导览（本章深入）
 
@@ -22,6 +22,7 @@ sidebar_position: 1
 - WAMR（Intel）：超低资源场景。
 
 对比维度：启动时延、内存占用、WASI/组件模型支持、嵌入 API、生态工具。
+小贴士：提前预编译（AOT/cwasm）能显著改善冷启动，见第 7 章的预编译对比示例。
 
 ## 3.2 工具链
 
@@ -33,9 +34,15 @@ sidebar_position: 1
 
 - `wasmtime inspect` / `wasm-tools objdump` / `wasm-objdump` 等。
 
+示例（结构查看）：
+```bash
+wasmtime inspect target/wasm32-wasi/release/rust_wasm_wasmtime.wasm | head -n 40
+wasm-tools print target/wasm32-wasi/release/rust_wasm_wasmtime.wasm | sed -n '1,40p'
+```
+
 ## 3.4 示例：Rust 生成 WASM + Wasmtime 执行
 
-参见 `examples/ch03/rust_wasm_wasmtime/`：
+参见 [examples/ch03/rust_wasm_wasmtime/](https://github.com/Thneoly/beyond-wasm/tree/main/examples/ch03/rust_wasm_wasmtime)：
 
 ```bash
 # 安装目标
